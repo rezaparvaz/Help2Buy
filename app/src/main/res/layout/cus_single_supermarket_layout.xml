@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="8dp"
+    app:backgroundTint="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/normal_padding">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height">
+
+            <ImageView
+                android:id="@+id/supermarket_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/photo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/gradient"
+                android:contentDescription="@string/gradient" />
+
+            <TextView
+                android:id="@+id/supermarket_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding">
+
+            <TextView
+                android:id="@+id/supermarket_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="@dimen/normal_padding" />
+
+            <TextView
+                android:id="@+id/supermarket_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/supermarket_address"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="@dimen/normal_padding" />
+
+            <TextView
+                android:id="@+id/supermarket_opening_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/supermarket_distance"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="@dimen/normal_padding" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:theme="@style/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/supermarket_opening_hours"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="@dimen/normal_padding"
+                android:stepSize="0.1" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

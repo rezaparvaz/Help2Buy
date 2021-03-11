@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreOwnerApp.OwnSupermarketDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/own_activity_supermarket_details_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:backgroundTint="@color/noColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.AppBarOverlay" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/own_activity_supermarket_details_photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow_color="#3f51b5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/own_activity_supermarket_details_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/own_activity_supermarket_details_photo"
+        app:layout_constraintEnd_toEndOf="@+id/own_activity_supermarket_details_photo"
+        app:layout_constraintStart_toStartOf="@+id/own_activity_supermarket_details_photo"
+        app:layout_constraintTop_toTopOf="@+id/own_activity_supermarket_details_photo">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Upload supermarket's photo"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/own_activity_supermarket_details_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:autofillHints=""
+        android:hint="@string/enter_the_supermarket_s_name"
+        android:inputType="textCapWords"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/own_activity_supermarket_details_photo"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/own_activity_supermarket_details_next"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_end_button_view_gray"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

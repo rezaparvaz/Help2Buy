@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".CustomerApp.CustomerMainActivity">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/cus_nav_host_fragment"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/noColor"
+                app:elevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/noColor"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/cus_main_activity_toolbar"
+                        android:layout_width="match_parent"
+                        android:background="@color/noColor"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:id="@+id/cus_main_activity_button_container"
+                        android:layout_width="match_parent"
+                        android:background="@color/noColor"
+                        android:layout_height="?attr/actionBarSize"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cus_main_activity_stores_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/round_end_button_view_gray"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/Stores"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+
+                        <Button
+                            android:id="@+id/cus_main_activity_items_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/round_end_button_view_gray"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/Offers"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/cus_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:background="@color/darkGray"
+                app:menu="@menu/cus_bottom_navigation_menu"
+                app:itemBackground="@color/darkGray"
+                app:itemIconTint="@android:color/white"
+                app:itemTextColor="@android:color/white" />
+
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:id="@+id/nav_view_drawer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:fitsSystemWindows="true"-->
+<!--            app:menu="@menu/activity_main_drawer" />-->
+
+<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+rootProject.name='einkaufsheld'
+include ':app', ':autoimageslider', ':switcher'
+

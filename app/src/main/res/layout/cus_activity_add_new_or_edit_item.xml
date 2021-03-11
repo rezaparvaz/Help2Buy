@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:backgroundTint="@color/white"
+    tools:context=".CustomerApp.AddNewOrEditItemActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/add_new_item_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_new_item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:backgroundTint="@color/noColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/AppTheme.AppBarOverlay" />
+
+        <TextView
+            android:id="@+id/add_new_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="88dp" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/add_new_item_quantity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:autofillHints=""
+        android:hint="@string/quantity"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/add_new_item_spinner_main"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/PieceOrKgArray"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/add_new_item_quantity_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+
+    <EditText
+        android:id="@+id/add_new_item_details_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:autofillHints=""
+        android:hint="@string/type_here_your_item_details"
+        android:inputType="textCapWords"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <FrameLayout
+        android:id="@+id/add_new_item_or_alternatively_optional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_item_spinner_optional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_item_details_main">
+
+        <View
+            android:id="@+id/add_new_item_separator3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="40dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:background="@color/white"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/or_alternatively_optional"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/add_new_item_quantity_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:autofillHints=""
+        android:hint="@string/quantity"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/add_new_item_spinner_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/PieceOrKgArray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/add_new_item_quantity_optional"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+
+    <EditText
+        android:id="@+id/add_new_item_details_optional"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:autofillHints=""
+        android:hint="@string/type_here_your_item_details"
+        android:inputType="textCapWords"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
+
+
+    <RadioGroup
+        android:id="@+id/add_new_item_radio_group"
+        android:layout_width="198dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_item_separator2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_item_details_optional"
+        app:layout_constraintVertical_bias="0.928">
+
+        <RadioButton
+            android:id="@+id/add_new_item_radio_button_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/bio"
+            app:buttonTint="@color/darkGray"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <RadioButton
+            android:id="@+id/add_new_item_radio_button_cheapest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/cheapest"
+            app:buttonTint="@color/darkGray"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="432dp" />
+
+        <RadioButton
+            android:id="@+id/add_new_item_radio_button_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/none"
+            app:buttonTint="@color/darkGray"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="464dp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/add_new_item_separator2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="40dp"
+        android:background="#c0c0c0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
+
+    <Button
+        android:id="@+id/cancel_add_item_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_end_button_view_light_gray"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_new_item_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_item_separator2" />
+
+    <Button
+        android:id="@+id/add_new_item_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_end_button_view_gray"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/add_new_item_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_item_separator2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<resources>
+
+    <string name="create_an_account">Create an account</string>
+    <string name="log_in">Log in</string>
+
+    <string name="app_name">Einkaufsheld</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="favourites">Favourites</string>
+    <string name="supermarkets_near_me">Supermarkets near me</string>
+    <string name="choose_your_current_location">Choose Your Current Location</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="menu_confirm">Confirm</string>
+
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id">739061423334327</string>
+    <string name="fb_login_protocol_scheme">fb739061423334327</string>
+    <string name="Stores">Stores</string>
+    <string name="items">Items</string>
+    <string name="Home">Home</string>
+    <string name="map">Map</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="account">Account</string>
+    <string name="search">Search</string>
+    <string name="i_would_like_to">I would like to …</string>
+    <string name="order_my_groceries">Order My Groceries</string>
+    <string name="deliver_groceries_and_earn_money">Deliver Groceries and Earn Money</string>
+    <string name="introduce_my_store_and_increase_my_sales">Introduce My Store and Increase My Sales</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="address">Address</string>
+    <string name="distance">Distance</string>
+    <string name="open_now">Open Now</string>
+    <string name="closed">Closed</string>
+    <string name="add_a_new_item">Add a new item</string>
+    <string name="add_from_favourites">Add from favourites</string>
+    <string name="quantity">Quantity</string>
+    <string name="type_here_your_item_details">Type here your item details</string>
+    <string name="or_alternatively_optional">Or Alternatively (Optional)</string>
+    <string name="bio">Bio</string>
+    <string name="cheapest">Cheapest</string>
+    <string name="none">None</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="new_item">New Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="currently_there_is_no_item_in_your_shopping_list">Currently, there is no item in your shopping list</string>
+    <string name="or_alternatively">Or Alternatively</string>
+    <string name="dashed_line">------</string>
+    <string name="piece">Piece</string>
+    <string name="kilogram">Kilogram</string>
+    <string name="confirm">Confirm</string>
+    <string name="triple_dot">...</string>
+    <string name="gradient">gradient</string>
+    <string name="photo">photo</string>
+    <string name="place_order">Place Order</string>
+    <string name="unavailableOpeningHours">Unavailable Opening Hours</string>
+    <string name="change_my_location">Change My Location</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="does_not_matter_which_supermarket">Doesn\'t Matter Which Supermarket?</string>
+    <string name="unspecified_supermarket">Unspecified Supermarket</string>
+    <string name="empty">Empty!</string>
+    <string name="nothing_favourited_yet">Nothing Favourited Yet!</string>
+    <string name="stores">STORES</string>
+    <string name="offers">OFFERS</string>
+    <string name="Offers">Offers</string>
+    <string name="current_order">Current Order</string>
+    <string name="home">Home</string>
+
+    <string-array name="PieceOrKgArray">
+        <item>@string/dashed_line</item>
+        <item>@string/piece</item>
+        <item>@string/kilogram</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="supplier_home">Supplier Home</string>
+    <string name="currently_there_is_no_order_available">Currently there is no order available!</string>
+    <string name="accept_order">Accept Order</string>
+    <string name="supplier_current_order">Supplier Current Order</string>
+    <string name="call">Call</string>
+    <string name="supplier_map">Supplier Map</string>
+    <string name="cancel_the_order">Cancel the order</string>
+    <string name="send_a_verification_code_via_sms">Send a verification code via SMS</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="undone_order">Undone Order</string>
+    <string name="undone_orders">Undone Orders</string>
+    <string name="details">Details</string>
+    <string name="your_order_is_being_processed">Your order is being Processed…</string>
+    <string name="ongoing_order">Ongoing Order</string>
+    <string name="ongoing_orders">Ongoing Orders</string>
+    <string name="pending_payment">Pending Payment</string>
+    <string name="pending_order">Pending Order</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="your_order_has_been_delivered">Your order has been delivered</string>
+    <string name="finished_orders">Finished Orders</string>
+    <string name="pending_payments">Pending Payments</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="successful_orders">Successful Orders</string>
+    <string name="successful_order">Successful Order</string>
+    <string name="finished_orders_but_different_prices_inserted">Finished orders but different prices inserted</string>
+    <string name="different_prices_inserted">Different Prices Inserted</string>
+    <string name="cancelled_orders">Cancelled Orders</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="supplier_account">Supplier Account</string>
+    <string name="not_specified">Not Specified</string>
+    <string name="available_suppliers">Available Suppliers</string>
+    <string name="address_not_specified">Address: Not Specified</string>
+    <string name="owner_home">Owner Home</string>
+    <string name="owner_account">Owner Account</string>
+    <string name="add_your_supermarket">Add Your Supermarket</string>
+    <string name="next">Next</string>
+    <string name="enter_the_supermarket_s_name">Enter the supermarket\'s name</string>
+
+</resources>

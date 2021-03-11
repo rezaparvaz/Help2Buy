@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cus_current_order_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:backgroundTint="@color/noColor"
+        app:popupTheme="@style/AppTheme.AppBarOverlay" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="?actionBarSize">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/cus_activity_current_order_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cus_activity_current_order_from_supermarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/cus_activity_current_order_from_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/cus_activity_current_order_list_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/cus_activity_current_order_to_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/cus_activity_current_order_directions_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_directions"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:backgroundTint="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/cus_activity_current_order_shopping_list_price_approve_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Did your shopping list cost €" />
+
+                    <TextView
+                        android:id="@+id/cus_activity_current_order_shopping_list_suppliers_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="\?" />
+
+                    <Button
+                        android:id="@+id/cus_activity_current_order_no"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/round_end_button_view_light_gray"
+                        android:fontFamily="@font/robotoregular"
+                        android:gravity="center"
+                        android:text="@string/no"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/cus_activity_current_order_yes"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/round_end_button_view_gray"
+                        android:fontFamily="@font/robotoregular"
+                        android:gravity="center"
+                        android:text="@string/yes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cus_activity_current_order_shopping_list_price_enter_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Then how much? €" />
+
+                    <EditText
+                        android:id="@+id/cus_activity_current_order_shopping_list_customer_price_text"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="numberDecimal"/>
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/cus_activity_current_order_confirm_price_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_end_button_view_gray"
+                    android:fontFamily="@font/robotoregular"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/cus_activity_current_order_fragment_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Thank you for your order!"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_happy" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/cus_activity_current_order_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/call"
+        android:textColor="@color/white"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar"
+        app:backgroundTint="#2B6E1F"
+        app:icon="@drawable/ic_call"
+        app:iconTint="@color/white" />
+</RelativeLayout>
+

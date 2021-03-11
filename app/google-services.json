@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392738076190",
+    "firebase_url": "https://help2buy-abf5a.firebaseio.com",
+    "project_id": "help2buy-abf5a",
+    "storage_bucket": "help2buy-abf5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392738076190:android:124eff24afb8fa94d6600f",
+        "android_client_info": {
+          "package_name": "com.einkaufsheld.help2buy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392738076190-fmqi6btcmt4jdqv3avgr0qmr5plqmdf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.einkaufsheld.help2buy",
+            "certificate_hash": "897286360ffba9c758985c4705533a0ca5460fe1"
+          }
+        },
+        {
+          "client_id": "392738076190-otda5dsd3141gq9f31qe06lsq9r12l28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_eChKzvfS-CM1PBYS0oE2bTvO5U28ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392738076190-otda5dsd3141gq9f31qe06lsq9r12l28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
